@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3_JavaScript</title>
+    <meta name="Author" contect="柳晓江">
+    <link rel="stylesheet" href="style/css/index.css">
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <div id="headerMain">
+            <a href="javascript:;" id="logo"><img src="style/images/logo.png" alt="网站首页"></a>
+            <nav id="menu">
+                <li>
+                    <a href="javascript:;">
+                        <div class="up"><img src="style/images/home_gruen.png"></div>
+                        <div><img src="style/images/home.png"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="up">翻页</div>
+                        <div>翻页</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="up">太空步</div>
+                        <div>太空步</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="up">网格</div>
+                        <div>网格</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="up">曲线</div>
+                        <div>曲线</div>
+                    </a>
+                </li>
+            </nav>
+            <div id="indicator"></div>
+        </div>
+    </div>
+    <div id="content">
+    <ul id="nav">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+        <ul id="list">
+            <li id="home" class="liList">
+                <div id='homeContent' class="divList">
+                    <div class="homeContent1">
+<!--                         <div class="show">
+                            <img src="style/images/show1.jpg" height="520" width="1100" alt="">
+                        </div>
+                        <div>
+                            <img src="style/images/show2.jpg" height="520" width="1100" alt="">
+                        </div>
+                        <div>
+                            <img src="style/images/show3.jpg" height="520" width="1100" alt="">
+                        </div>
+                        <div>
+                            <img src="style/images/show4.jpg" height="520" width="1100" alt="">
+                        </div>
+                        <div>
+                            <img src="style/images/show5.jpg" height="520" width="1100" alt="">
+                        </div> -->
+                    </div>
+                    <ul class="homeContent2">
+<!--                         <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li> -->
+                    </ul>
+                </div>
+            </li>
+            <li id="course" class="liList">
+                <div id='courseContent' class="divList">
+                    <div class="courseContent1">
+                        <h1 class="commonTitle">
+                            <span>JS+CSS3</span><br>
+                            <span>翻牌效果</span>
+                        </h1>
+                    </div>
+                    <div class="courseContent2">
+                        <p class="darkText">
+                           运用JavaScript+CSS3打造炫酷的翻牌效果，综合运用了CSS3中的keyframes  animation   transform  rotate   scale   translate  transition perspective  preserve-3d等知识点……
+                        </p>
+                    </div>
+                    <div class="courseContent3">
+<!--                          <div class="courseLine"></div>
+                        <div class="courseLine" style="left:120px;"></div>
+                        <div class="courseLine" style="left:240px;"></div>
+                        <div class="courseLine" style="left:360px;"></div>
+                        <div class="courseLine" style="left:480px;"></div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div>
+                        <div class="courseLogo">
+                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
+                            <div class="courseAfter">测试文字1</div>
+                        </div> -->
+                    </div>
+                </div>
+            </li>
+            <li id="works" class="liList">
+                <div id="worksContent" class="divList">
+                    <div class="worksContent1">
+                        <h1 class="commonTitle">
+                            <span>运用CSS3</span><br>
+                            <span>制造机器人</span><br>
+                            <span>华丽太空舞</span>
+                        </h1>
+                    </div>
+                    <div class="worksContent2">
+<!--                         <div class="worksImgParent">
+                            <img src="style/images/worksimg1.jpg" class="worksImg">
+                            <div class="worksImgMark">
+                                <span>keyframes</span>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="worksImgParent">
+                            <img src="style/images/worksimg2.jpg" class="worksImg">
+                            <div class="worksImgMark">
+                                <span>animation</span>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="worksImgParent">
+                            <img src="style/images/worksimg3.jpg" class="worksImg">
+                            <div class="worksImgMark">
+                                <span>transform perspective</span>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="worksImgParent">
+                            <img src="style/images/worksimg4.jpg" class="worksImg">
+                            <div class="worksImgMark">
+                                <span>rotate translate transition</span>
+                                <div></div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="worksContent3"></div>
+                </div>
+            </li>
+            <li id="about" class="liList">
+                <div id='aboutContent' class="divList">
+                    <div class="aboutContent1">
+                        <h1 class="commonTitle">
+                            <span>网格算法</span><br>
+                            <span>万花筒般</span><br>
+                            <span>图片展示</span>
+                        </h1>
+                    </div>
+                    <div class="aboutContent2">
+                        <p class="darkText">
+                            运用网格算法，配合JS与CSS3的相关知识点：CSS3事件(transitionend)keyframes  animation   transform  rotate   scale   translate  transition perspective  preserve-3d等，打造炫酷图片展示效果
+                        </p>
+                    </div>
+                    <div class="aboutContent3">
+                        <div class="aboutImg">
+                            <ul data-src="style/images/about1.jpg"></ul>
+                            <span style="background:url(style/images/about2.jpg) no-repeat;"></span>
+                        </div>
+                        <div class="aboutImg">
+                            <ul data-src="style/images/about3.jpg"></ul>
+                            <span style="background:url(style/images/about4.jpg) no-repeat;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blueLine"></div>
+            </li>
+            <li id="team" class="liList">
+                <div id='teamContent' class="divList">
+                    <div class="teamContent1">
+                        <h1 class="commonTitle">
+                            <span>canvas</span><br>
+                            <span>曲线算法</span>
+                        </h1>
+                    </div>
+                    <div class="teamContent2">
+                        <p class="darkText">
+                            关于我们的气泡上升效果，体现灵动活力的象征，在众多展示效果中，它无疑是极其抓眼球的一种表现形式，综合运用到 HTML5 的 canvas操作(getContext('2d')) ，以及曲线算法……
+                        </p>
+                    </div>
+                    <div class="teamContent3">
+<!--                         <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <canvas id="teamBubble" width="120" height="300"></canvas> -->
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="style/js/index.js"></script>
+</body>
+</html>
