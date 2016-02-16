@@ -5,12 +5,27 @@
     <title>CSS3_JavaScript</title>
     <meta name="Author" contect="柳晓江">
     <link rel="stylesheet" href="style/css/index.css">
+    <script src="style/js/modernizr.js"></script>
+    <script>
+      if ((!to3d()) || document.documentMode == 10 || document.documentMode == 11)
+      {
+          window.location="error.html";
+      }
+    </script>
 </head>
 <body>
 <div id="main">
+    <div id="loading">
+        <div></div>
+        <div></div>
+        <span></span>
+    </div>
     <div id="header">
         <div id="headerMain">
             <a href="javascript:;" id="logo"><img src="style/images/logo.png" alt="网站首页"></a>
+            <div id="music">
+                <audio id="audio1" src="style/images/audio.mp3" preload="auto" loop></audio>
+            </div>
             <nav id="menu">
                 <li>
                     <a href="javascript:;">
@@ -58,28 +73,8 @@
             <li id="home" class="liList">
                 <div id='homeContent' class="divList">
                     <div class="homeContent1">
-<!--                         <div class="show">
-                            <img src="style/images/show1.jpg" height="520" width="1100" alt="">
-                        </div>
-                        <div>
-                            <img src="style/images/show2.jpg" height="520" width="1100" alt="">
-                        </div>
-                        <div>
-                            <img src="style/images/show3.jpg" height="520" width="1100" alt="">
-                        </div>
-                        <div>
-                            <img src="style/images/show4.jpg" height="520" width="1100" alt="">
-                        </div>
-                        <div>
-                            <img src="style/images/show5.jpg" height="520" width="1100" alt="">
-                        </div> -->
                     </div>
                     <ul class="homeContent2">
-<!--                         <li class="active"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li> -->
                     </ul>
                 </div>
             </li>
@@ -97,60 +92,10 @@
                         </p>
                     </div>
                     <div class="courseContent3">
-<!--                          <div class="courseLine"></div>
-                        <div class="courseLine" style="left:120px;"></div>
-                        <div class="courseLine" style="left:240px;"></div>
-                        <div class="courseLine" style="left:360px;"></div>
-                        <div class="courseLine" style="left:480px;"></div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div>
-                        <div class="courseLogo">
-                            <div class="courseBefore" style='background-image:url(style/images/icon_1.png);'></div>
-                            <div class="courseAfter">测试文字1</div>
-                        </div> -->
                     </div>
+                    <div class="plane1"></div>
+                    <div class="plane2"></div>
+                    <div class="plane3"></div>
                 </div>
             </li>
             <li id="works" class="liList">
@@ -163,36 +108,11 @@
                         </h1>
                     </div>
                     <div class="worksContent2">
-<!--                         <div class="worksImgParent">
-                            <img src="style/images/worksimg1.jpg" class="worksImg">
-                            <div class="worksImgMark">
-                                <span>keyframes</span>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div class="worksImgParent">
-                            <img src="style/images/worksimg2.jpg" class="worksImg">
-                            <div class="worksImgMark">
-                                <span>animation</span>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div class="worksImgParent">
-                            <img src="style/images/worksimg3.jpg" class="worksImg">
-                            <div class="worksImgMark">
-                                <span>transform perspective</span>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div class="worksImgParent">
-                            <img src="style/images/worksimg4.jpg" class="worksImg">
-                            <div class="worksImgMark">
-                                <span>rotate translate transition</span>
-                                <div></div>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="worksContent3"></div>
+                    <div class="pencel1"></div>
+                    <div class="pencel2"></div>
+                    <div class="pencel3"></div>
                 </div>
             </li>
             <li id="about" class="liList">
